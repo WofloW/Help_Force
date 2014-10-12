@@ -1,0 +1,19 @@
+<ion-view title="Tasks">
+  <ion-nav-buttons side="left">
+     <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
+  </ion-nav-buttons>
+  
+  <ion-nav-buttons side="right">
+  <a class="tab-item" ng-click="clear_task_cache()" href="#/app/create">
+	<i class="icon ion-ios7-plus"></i>
+  </a>
+  </ion-nav-buttons>
+  
+  <ion-content class="has-header">
+    <ion-list>
+      <ion-item ng-repeat="task in currentTasks" href="#/app/home/{{task.id}}">
+        {{task.description}}
+      </ion-item>
+    </ion-list>
+	</ion-content>
+</ion-view>

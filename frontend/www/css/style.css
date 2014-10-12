@@ -1,0 +1,25 @@
+/* Empty. Add your own CSS if you like */
+ion-side-menu.menu-left.menu {
+  background-color: #5B6166 !important;
+}
+
+/*Set the background to transparent for ion-item*/
+.menu-cus .item {
+  background-color: transparent;
+  border-color: #8A9398;
+  border: 1px solid;
+  color: #F0F1F1;
+}
+
+/*Ion-item adds item-complex and an inner div, .item-content*/
+/* this needs to be transparent too, but doesnt need borders*/
+.menu-cus .item-complex .item-content, .menu-cus .item-radio .item-content {
+  background-color: transparent;
+}
+
+.menu-cus h2,
+.menu-cus h3,
+.menu-cus p,
+.menu-cus a {
+  color: #ffffff;
+}

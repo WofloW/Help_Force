@@ -1,0 +1,41 @@
+h2 Hello World
+p
+  | The time is now:
+  = Time.now
+p = link_to "Users", users_path
+p = link_to "Tasks", tasks_path
+p = link_to "Categories", categories_path
+
+h2 API list
+pre
+  |
+    Verb   URI Pattern                         Controller#Action
+    GET    /categories(.:format)               categories#index
+    POST   /categories(.:format)               categories#create
+    GET    /categories/new(.:format)           categories#new
+    GET    /categories/:id/edit(.:format)      categories#edit
+    GET    /categories/:id(.:format)           categories#show
+    PATCH  /categories/:id(.:format)           categories#update
+    PUT    /categories/:id(.:format)           categories#update
+    DELETE /categories/:id(.:format)           categories#destroy
+    GET    /tasks/search/:keyword(.:format)    tasks#search
+    GET    /tasks/category/:id(.:format)       tasks#category
+    GET    /tasks(.:format)                    tasks#index
+    POST   /tasks(.:format)                    tasks#create
+    GET    /tasks/new(.:format)                tasks#new
+    GET    /tasks/:id/edit(.:format)           tasks#edit
+    GET    /tasks/:id(.:format)                tasks#show
+    PATCH  /tasks/:id(.:format)                tasks#update
+    PUT    /tasks/:id(.:format)                tasks#update
+    DELETE /tasks/:id(.:format)                tasks#destroy
+    GET    /users/:id/posted_tasks(.:format)   users#posted_tasks
+    GET    /users/:id/received_tasks(.:format) users#received_tasks
+    GET    /users(.:format)                    users#index
+    POST   /users(.:format)                    users#create
+    GET    /users/new(.:format)                users#new
+    GET    /users/:id/edit(.:format)           users#edit
+    GET    /users/:id(.:format)                users#show
+    PATCH  /users/:id(.:format)                users#update
+    PUT    /users/:id(.:format)                users#update
+    DELETE /users/:id(.:format)                users#destroy
+    GET    /                                   welcome#index

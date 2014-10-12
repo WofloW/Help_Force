@@ -1,0 +1,29 @@
+<ion-view title="New Task">
+<ion-content class="has-header">
+<div class="list">
+  <label class="item item-input item-floating-label">
+    <span class="input-label">Description</span>
+    <input type="text" ng-model="task.description" placeholder="description">
+  </label>
+  <label class="item item-input item-floating-label">
+    <span class="input-label">Deadline</span>
+    <input type="text" ng-model="task.deadline" placeholder="deadline">
+  </label>
+  <label class="item item-input item-floating-label">
+    <span class="input-label">Price</span>
+    <input type="text" ng-model="task.price" placeholder="price">
+  </label>
+  <label class="item item-input item-floating-label">
+    <span class="input-label">Requirement</span>
+    <input type="text" ng-model="task.requirement" placeholder="requirement">
+  </label>
+  <label class="item item-input item-floating-label">
+    <span class="input-label">Category</span>
+    <input type="text" ng-model="task.category" placeholder="Category">
+  </label>
+</div>
+<a class="button button-block button-positive" ng-click ="create_task()" href="#/app/home">
+  Submit
+</a>
+</ion-content>
+</ion-view>

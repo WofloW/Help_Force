@@ -1,0 +1,85 @@
+<style type="text/css">
+#menu {
+font-family: Arial;
+font-size: 14px;
+overflow: hidden;
+}
+#menu, #menu ul {
+list-style-type: none;
+background: #A3C159;
+margin: 0;
+padding: 0;
+}
+#menu li {
+float: left;
+}
+#menu li a {
+display: block;
+padding: 10px 15px;
+color: #FFF;
+text-decoration: none;
+border-right: 1px solid #FFF;
+}
+#menu li a:hover {
+background: #1BA6B2;
+}
+#menu li ul li {
+float: none;
+}
+#menu li ul li a {
+border-top: 1px solid #FFF;
+}
+#menu li ul {
+display: none;
+position: absolute;
+}
+#menu li:hover ul {
+display: block;
+}
+</style>
+<ion-view title="Edit Status">
+<ion-nav-buttons side="left">
+<button menu-toggle="left" class="button icon-left ion-chevron-left button-clear button-dark"></button>
+</ion-nav-buttons>
+<ion-content class="has-header">
+<div class="card">
+  <div style="text-align:center" class="item item-divider">
+    Task 1
+  </div>
+  <div style="text-align:center" class="item item-text-wrap">
+    Change Status
+  </div>
+  <div class="item item-divider">
+    <div class="row">
+      <div style="text-align:center" class="col">From</div>
+      <div style="text-align:center" class="col">Last Status</div>
+    </div>
+  </div>
+  <div class="row">
+    
+    <div style="text-align:center" class="col col-50">
+      <div>
+        To
+      </div>
+    </div>
+    <div style="text-align:center" class="col col-50">
+      <select>
+        <option>Blue</option>
+        <option>Red</option>
+      </select>
+    </label>
+  </div>
+</div>
+</div>
+</ion-content>
+<div class="bar bar-footer">
+<button style="margin:0 auto" class="button button-icon icon ion-navicon">Edit</button>
+</div>
+<!--   <ion-footer-bar style="text-align:center" class="bar-assertive">
+<div class="row">
+<div class="col col-33 col-offset-33">
+  <button class="button icon ion-gear-a"></button>
+</div>
+</div>
+</ion-footer-bar> -->
+</ion-view>

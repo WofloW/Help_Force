@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  poster_id: 1
+  receiver_id: 1
+  description: MyString
+  price: 1
+  deadline: 2014-10-11
+  status_id: 1
+
+two:
+  poster_id: 1
+  receiver_id: 1
+  description: MyString
+  price: 1
+  deadline: 2014-10-11
+  status_id: 1

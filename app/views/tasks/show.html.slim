@@ -1,0 +1,27 @@
+p#notice = notice
+
+p
+  strong Poster:
+  = @task.poster_id
+p
+  strong Receiver:
+  = @task.receiver_id
+p
+  strong Description:
+  = @task.description
+p
+  strong Price:
+  = @task.price
+p
+  strong Deadline:
+  = @task.deadline
+p
+  strong Status:
+  = @task.status_id
+p
+  strong Category:
+  = @task.category_id
+
+= link_to 'Edit', edit_task_path(@task)
+'|
+= link_to 'Back', tasks_path

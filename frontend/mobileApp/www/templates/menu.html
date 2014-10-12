@@ -1,0 +1,61 @@
+<ion-side-menus>
+
+  <ion-pane ion-side-menu-content>
+    <ion-nav-bar class="bar-stable nav-title-slide-ios7">
+      <ion-nav-back-button class="button-clear"><i class="icon ion-ios7-arrow-back"></i> Back</ion-nav-back-button>
+    </ion-nav-bar>
+    <ion-nav-view name="menuContent" animation="slide-left-right"></ion-nav-view>
+  </ion-pane>
+
+  <ion-side-menu side="left" class="item-icon-left item-icon-right">
+    <header class="bar bar-header bar-stable bar-dark">
+      <h1 class="title">Menu</h1>
+    </header>
+    <ion-content class="has-header menu-cus">
+      <ion-list>
+        <ion-item nav-clear menu-close ng-click="login()">
+		<i class="icon ion-ios7-person"></i>
+          &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspProfile
+		<i class="icon ion-ios7-arrow-right"></i>
+        </ion-item>
+        <ion-item nav-clear menu-close href="#/app/search">
+		<i class="icon ion-ios7-search"></i>
+          &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSearch
+		<i class="icon ion-ios7-arrow-right"></i>
+        </ion-item>
+        <ion-item nav-clear menu-close href="#/app/browse">
+		<i class="icon ion-ios7-eye-outline"></i>
+          &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspCurrent Tasks
+		<i class="icon ion-ios7-arrow-right"></i>
+        </ion-item>
+        <ion-item nav-clear menu-close href="#/app/playlists">
+		<i class="icon ion-ios7-paper-outline"></i>
+          &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspTask History
+		<i class="icon ion-ios7-arrow-right"></i>
+        </ion-item>
+        <ion-item nav-clear menu-close href="#/app/payment">
+		<i class="icon ion-ios7-pricetags-outline"></i>
+          &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspPayment
+		<i class="icon ion-ios7-arrow-right"></i>
+        </ion-item>
+        <ion-item nav-clear menu-close href="#/app/settings">
+		<i class="icon ion-ios7-gear-outline"></i>
+          &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSettings
+		<i class="icon ion-ios7-arrow-right"></i>
+        </ion-item>
+        <ion-item nav-clear menu-close href="#/app/help">
+		<i class="icon ion-ios7-help-outline"></i>
+          &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspHelp
+		<i class="icon ion-ios7-arrow-right"></i>
+        </ion-item>
+        <ion-item nav-clear menu-close href="#/app/about">
+		<i class="icon ion-ios7-information-outline"></i>
+          &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspAbout
+		<i class="icon ion-ios7-arrow-right"></i>
+        </ion-item>
+		
+        </ion-item>
+      </ion-list>
+    </ion-content>
+  </ion-side-menu>
+</ion-side-menus>
